@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <!-- Author: Jasmine Montrichard -->
+    <title>Contact</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='../style.css'>
+    <link rel='stylesheet' href='mediaqueries_contact.css'>
+    <link rel='icon' href='../images/logosq_reg.svg'>
+</head>
+
+<body id='contact'>
+    <div class='navBar'>
+        <ul>
+            <li><img src='../images/logosq_white.svg' class='navBarLogo' alt='logo'></li>
+            <li style='padding-left: 2em;'><a href='../home.html'>Home</a></li>
+            <li><a href='../projects/projects.html'>Projects</a></li>
+            <li><a href='../experiences/experiences.html'>Experiences</a></li>
+            <li><a href='../futureplans/futureplans.html'>Future Plans</a></li>
+            <li><a href='contact.html'>Contact</a></li>
+        </ul>
+    </div>
+    <div id='main-container'>
+        <div class='flex-container'>
+            <div class='section'>
+                <h1 id='pageTitle' class='flex-item'>Contact Me</h1>
+                <p class='flex-item'>
+                    Have any questions, feedback, or just simply want to chat? Fill in the 
+                    form below!
+                </p>
+                <form name='feedback' method='POST' action='https://csunix.mohawkcollege.ca/tooltime/showit.pl'>
+                    <table>
+                        <tr>
+                            <td class='title'>Name:</td>
+                            <td>
+                                <input type='text' id='name' value='' maxlength='60' size='25'
+                                placeholder='John Doe' required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class='title'>Email:</td>
+                            <td>
+                                <input type='email' id='email' name='email' value='' maxlength='60' size='25'
+                                    placeholder='example@hotmail.com' required>
+                            </td>
+                        </tr>
+                    </table>
+                    <fieldset>
+                        <legend style='font-weight: bold'>Please select the type of feedback you want to give:</legend>
+                        <input type='radio' id='1' name='feedbackType' value='General Feedback'
+                        required>
+                        <label for='1'>General Feedback</label>
+                        <br>
+                        <input type='radio' id='2' name='feedbackType' value='Question'>
+                        <label for='2'>Question</label>
+                        <br>
+                        <input type='radio' id='3' name='feedbackType' value='Request'>
+                        <label for='3'>Request</label>
+                        <br>
+                        <input type='radio' id='4' name='feedbackType' value='Other'>
+                        <label for='4'>Other</label>
+                    </fieldset>
+                    <table>
+                        <tr>
+                            <td class='title'>Please include your inquiries below:</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name='feedbackBox' rows='5' cols='48' required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type='submit' title='Submit' name='goButton' value='Submit'></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
