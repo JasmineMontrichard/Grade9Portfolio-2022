@@ -1,0 +1,42 @@
+/* ==== SMALL ===== */
+@media screen and (max-width: 600px) {
+    /* Page Preview Section */
+    div#pagesPreview.flex-container {
+        flex-direction: row;
+    }
+}
+
+
+/* ==== MEDIUM ==== */
+/* Page Preview */
+@media screen and (max-width: 730px) {
+    /* Page Preview Section */
+    div#pagesPreview {
+        justify-content: center;
+        align-content: center;
+        height: 100%;
+    }
+
+    div#pagesPreview div.flex-item {
+        margin: 5px;
+        overflow: hidden;
+        height: 20vw;
+        width: 10vw;
+        position: relative;
+    }
+
+    div#pagesPreview div.flex-item img {
+        /* Images must be approx. 3882x1833 */
+        height: auto;
+        width: 100%;
+    }
+}
+
+/* ==== LARGE ===== */
+/* Page Preview */
+@media screen and (min-width: 800px) {
+    /* Page Preview Section */
+    div#pagesPreview.flex-container {
+        flex-direction: row;
+    }
+}

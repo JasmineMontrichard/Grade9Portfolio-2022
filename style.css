@@ -1,0 +1,556 @@
+/* Imports fonts from Google Fonts */
+/* Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Noto Emoji */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300;400;500;600;700&display=swap');
+
+/* Colour Palette
+#BFE9E8 Powder Blue
+#1B4867 Indigo Dye - MAIN BRAND COLOUR
+#5FA8D3 Carolina Blue 
+#61B6CB Maximum Blue
+#CAE9FE Columbia Blue
+*/
+
+/* ============== GENERAL ============= */
+/* Applies to all pages */
+@viewport {
+    width: device-width;
+    zoom: 1;
+    min-zoom: 0.5;
+    max-zoom: 3;
+    user-zoom: fixed;
+}
+
+body {
+    background-color: whitesmoke;
+    display: flex;
+    color: black;
+    font-family: 'Raleway', 'Roboto';
+    font-weight: normal;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+}
+
+a, input[type=submit] {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+q {
+    display: inline-flex;
+    color: #61B6CB;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    justify-items: center;
+}
+
+ul, ol {
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+div:not(.navBar) ul {
+    /* Applies to all divs with ul except the navBar */
+    /* - Gives content space from bullet point */
+    margin-left: 1em;
+}
+
+span.highlight {
+    color: #5FA8D3; /* turquoise blue */
+}
+
+.centerText {
+    text-align: center;
+}
+
+.centerQ {
+    /* Should only apply for quote tags */
+    /* 
+        Centers quote tags
+    */
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centerImg {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35vw;
+}
+
+.hidden {
+    /* 
+        Used for media queries when screen reaches
+        a specified width
+    */
+    /* Applies to any element or section */
+    display: none; 
+}
+
+.spotifyiFrame {
+    /* Applies to Spotify iframes */
+    margin: 10px 0px 10px 0px; /* top right bottom left */
+}
+
+.emoji {
+    /* 
+        Applies to all emojis used on site since not all
+        computers have the same emoji appearance
+    */
+    font-family: 'Noto Emoji';
+    font-weight: bold;
+}
+
+.previewImg {
+    float: none !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 35vw !important;
+}
+
+/* Navigation Bar */
+div.navBar {
+    float: left;
+    background-color: #1B4867;
+    overflow: hidden;
+    width: 115%;
+    margin: -1em 0 0 -0.5em; /* top right bottom left */
+    position: fixed;
+    z-index: 2;
+    box-shadow: 0px 4px 4px rgba(78, 78, 78, 0.315);
+}
+
+div.navBar ul {
+    display: inline-flex;
+    list-style-type: none;
+    padding-top: 0.35em;
+}
+
+div.navBar ul li a {
+    display: inline-flex;
+    color: white;
+    font-weight: 500;
+    margin: 1em; /* top right bottom left */
+    text-decoration: none;
+}
+
+img.navBarLogo {
+    float: left;
+    height: 60px;
+    margin: 0px 0px 0px 0px; /* top right bottom left */
+    position: relative;
+    width: 60px;
+}
+
+/* Back To Top Section */
+/* Appears at the very bottom of the page */
+.backToTop-container {
+    background-color: whitesmoke;
+    flex-direction: row !important;
+    margin: 0px;
+    padding: 0px;
+    position: static;
+    justify-content: center !important;
+}
+
+.backToTop {
+    color: rgb(110, 110, 110) !important;
+    display: inline-flex;
+    font-weight: 500 !important;
+    justify-content: center;
+    
+    transition: 0.1s;
+}
+
+.backToTop:hover {
+    color: rgb(24, 24, 24) !important;
+    text-decoration: none;
+}
+
+/* Default Containers */
+#main-container {
+    /* 
+        Leaves space for navBar
+        (If user is at top of page)
+    */
+    padding-top: 4em;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1em 0em 1em 0em; /* top right bottom left */
+    padding: 1em 10% 1em 10%; /* top right bottom left */
+    position: relative;
+    top: 1.5em;
+}
+
+.flex-item {
+    flex: 100%;
+}
+
+.section {
+    flex-direction: row;
+    margin: 2em;
+}
+
+.section-container {
+    /* 
+        Used for inner sections, such as the Current Plans 
+        section in Future Plans page
+    */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-container .section {
+    /*
+        Makes it so nested sections don't have left spacing
+    */
+    margin-left: 0px;
+}
+
+.lastDiv {
+    /* Must be holding the last flex-container(s) on page */
+    background-color: #eeeeee;
+    /* 
+        Stretches left and right side of div so it covers a
+        section of the page
+    */
+    margin-left: -1em;
+    margin-right: -4em;
+}
+
+/* GENERAL
+==================================== */
+
+/* ================================= 
+   HOME
+*/
+
+/* Only applies to the main home page */
+body#home p, body#home div:not(.navBar) ol, body#home div:not(.navBar) ul {
+    /* 
+        div:not(...) is added so following properties actually
+        do not apply to the navigation bar
+    */
+    font-size: 21px !important;
+}
+
+/* Page Preview Section */
+body#home #pagePreviewContainer {
+    padding: 1em;
+}
+
+body#home div#pagesPreview {
+    justify-content: center;
+    align-content: center;
+    height: 50vw;
+    top: -4em;
+}
+
+body#home div#pagesPreview .flex-item {
+    margin: 5px;
+    overflow: hidden;
+    height: 15vw;
+    width: 10vw;
+    position: relative;
+}
+
+body#home div#pagesPreview .flex-item img {
+    /* Images must be approx. 3882x1833 */
+    width: 31vw;
+    border-radius: 15px;
+
+    filter: brightness(50%);
+    transition: 0.5s;
+}
+
+body#home div#pagesPreview .flex-item img:hover {
+    border-radius: 15px;
+
+    filter: brightness(20%);
+}
+
+body#home div#pagesPreview .flex-item h1 {
+    color: white;
+    font-size: 3.5vw;
+    z-index: 1;
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 17px;
+}
+
+/* HOME
+==================================== */
+
+/* ================================= 
+   PROJECTS
+*/
+/* PROJECTS
+==================================== */
+
+/* ================================= 
+   EXPERIENCES
+*/
+
+body#experiences div.tree {
+    position: absolute;
+}
+
+body#experiences div.tree img {
+    display: block;
+    height: auto;
+    width: 11em;
+    position: static;
+}
+
+body#experiences #main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+body#experiences div#main-container div.flex-container:nth-of-type(2) {
+    padding-left: 100px;
+}
+
+body#experiences div#main-container div.flex-container:last-of-type div.section {
+    margin-bottom: 4.5em;
+}
+
+/* EXPERIENCES
+==================================== */
+
+/* ================================= 
+   FUTURE PLANS
+*/
+
+body#futurePlans #currentPlansSection h2 {
+    color: #1B4867;
+    filter: opacity(75%);
+}
+
+body#futurePlans #futurePlansConclusion h1 {
+    text-align: center;
+}
+
+/* Table (Personal Schedule) */
+body#futurePlans #personalScheduleInnerSection {
+    display: flex;
+    flex-direction: column;
+}
+
+body#futurePlans #personalScheduleInnerSection table {
+    border-collapse: collapse;
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+body#futurePlans #personalScheduleInnerSection th, td {
+    border: 2px solid #1B4867;
+    background-color: white;
+    padding: 10px;
+}
+
+body#futurePlans #personalScheduleInnerSection th {
+    color: #1B4867;
+}
+
+body#futurePlans #personalScheduleInnerSection td {
+    color: #6f8391;
+    font-size: 18px;
+}
+
+.tdHighlight {
+    color: #5FA8D3;
+    font-weight: bold;
+}
+
+/* FUTURE PLANS
+==================================== */
+
+/* Links
+   - Does not apply to navBar list items
+*/
+a {
+    font-family: 'Raleway';
+    font-size: 20px;
+}
+
+a:link {
+    text-decoration: none;
+    font-weight: 800;
+    color: #3fb2ff; /* bright blue */
+}
+
+a:visited {
+    text-decoration: none;
+    color: #3fb2ff; /* bright blue */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0099ff; /* brighter blue */
+}
+
+.unavailable {
+    color: rgb(199, 0, 0) !important;
+    font-weight: 800;
+}
+
+a.unavailable:link {
+    color: rgb(199, 0, 0) !important;
+    text-decoration: none;
+}
+
+a.unavailable:hover {
+    color: rgb(199, 0, 0) !important;
+    text-decoration: none;
+}
+
+/* ================================= 
+   CONTACT
+*/
+body#contact {
+    justify-content: space-between;
+}
+
+body#contact h1#pageTitle {
+    border-bottom: 2px #5FA8D3 solid;
+    padding-bottom: 20px;
+}
+
+/* Form */
+body#contact form table {
+    margin-bottom: 0.5em;
+}
+
+body#contact form table tr td.title {
+    font-weight: bold;
+}
+
+body#contact form table tr td {
+    background-color: transparent;
+    border: none;
+    padding: 10px 5px 5px 0px; /* top right bottom left */
+}
+
+body#contact fieldset {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+body#contact input[type=submit] {
+    width: 15vw;
+    height: 3em;
+    background-color: #5FA8D3;
+    font-family: 'Montserrat', 'Raleway';
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+
+    transition: 0.2s;
+}
+
+body#contact input[type=submit]:hover {
+    filter: brightness(110%);
+}
+
+/* CONTACT
+==================================== */
+
+/* ============== MEDIA QUERIES ============= */
+/* Applies to all pages */
+/* 
+    - Other CSS stylesheets (e.g. mediaqueries_home.css) only apply
+    to 'home' first before this main stylesheet (style.css)
+*/
+
+/* Navigation Bar */
+@media screen and (max-width: 790px) {
+    div.navBar {
+        position: relative;
+        margin-right: -1em;
+    }
+
+    div.navBar ul {
+        display: block;
+        width: 1000%;
+    }
+
+    div.navBar ul li .navBarLogo {
+        display: none;
+    }
+
+    div.navBar ul li:nth-of-type(2) {
+        padding-left: 0px !important;
+    }
+
+    #main-container {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    #main-container .flex-container:first-of-type {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+}
+
+/* ===== SMALL ===== */
+@media screen and (max-width: 600px) {
+    img.flex-item {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+}
+
+/* ===== MEDIUM ===== */
+/* 
+    N/A 
+*/
+
+/* ===== LARGE ===== */
+@media screen and (min-width: 831px) {
+    /* Flexbox */
+    .flex-container {
+        flex-direction: column;
+    }
+
+    img.flex-item {
+        float: right;
+        margin: 1em;
+    }
+}
+
+/* MEDIA QUERIES
+==================================== */
