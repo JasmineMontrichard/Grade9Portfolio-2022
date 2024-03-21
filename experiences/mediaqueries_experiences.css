@@ -1,0 +1,89 @@
+/* ==== SMALL ===== */
+
+/* ==== MEDIUM ==== */
+@media screen and (max-width: 600px) {
+    img.flex-item {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    /* Containers */
+    #main-container {
+        position: relative;
+        padding-top: 20em;
+    }
+
+    /* navBar*/
+    div.navBar {
+        position: absolute;
+    }
+
+    div.navBar ul {
+        display: block;
+    }
+
+    div.navBar ul li .navBarLogo {
+        display: none;
+    }
+
+    div.navBar ul li:nth-of-type(2) {
+        padding-left: 0px !important;
+    }
+    
+    div.section.tree img#treeLine3 {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 706px) {
+    /* Tree */
+    div.section.tree {
+        filter: opacity(30%);
+    }
+}
+
+/* ==== LARGE ===== */
+@media screen and (min-width: 800px) {
+    /* Flexbox */
+    .flex-container {
+        flex-direction: column;
+    }
+
+    img.flex-item {
+        float: right;
+        margin: 1em;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 985px) {
+    div.section.tree img#treeLine1 {
+        display: block !important;
+    }
+
+    div.section.tree img#treeLine2 {
+        display: block !important;
+    }
+
+    div.section.tree img#treeLine3 {
+        display: block !important;
+    }
+
+    div.section.tree img#treeLine4 {
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 984px) {
+    div.section.tree img#treeLine1 {
+        display: block !important;
+    }
+
+    div.section.tree img#treeLine2 {
+        display: block !important;
+    }
+}
