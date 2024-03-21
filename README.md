@@ -3,7 +3,7 @@
   <strong><a href="https://personal-page-7063246.codehs.me/home.html">View this webpage here!</a></strong>
   <p>
     <br>
-    <img src="https://media.licdn.com/dms/image/D4E2DAQHUqxZz_-ipqg/profile-treasury-image-shrink_800_800/0/1692247829031?e=1708984800&v=beta&t=bDwIvHapHCJ6DP85nkKgxiWJdZs583CQPJDD5zqokR8" alt="Grade9Portfolio-2022 preview" width="80%" height="80%"/>
+    <img src="https://media.licdn.com/dms/image/D4E2DAQHUqxZz_-ipqg/profile-treasury-image-shrink_800_800/0/1692247829031?e=1711587600&v=beta&t=U7PySt33vsQ87CBtNG0pXLALkCTwvT3DNCv_cw0N5Ds" alt="Grade9Portfolio-2022 preview" width="80%" height="80%"/>
   </p>
 </div>
 
