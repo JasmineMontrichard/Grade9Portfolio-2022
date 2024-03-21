@@ -8,7 +8,7 @@
 </div>
 
 ### Background
-The purpose of this portfolio was to build on my skills and knowledge of web development, reflect on my learning experience throughout my Introduction to HTML & CSS courses (COMP10265 & COMP10266), apply the skills and knowledge I learned, and provide an overview of more projects I have previously worked on. The webpage included a custom navigation bar, logo, and a contact page (for demonstration purposes). Additionally, I implemented details regarding my lifelong path entering high-school, post-secondary education, and my current experience at the time of creating this webpage.
+The purpose of this portfolio was to build on my skills and knowledge of web development, reflect on my learning experience throughout my Introduction to HTML & CSS courses (COMP10265 & COMP10266), apply the skills and knowledge I learned, and provide an overview of more projects I have previously worked on. The webpage included a custom navigation bar, logo, and a contact page (for demonstration purposes). Additionally, I successfully implemented a working form, utilized tables, and added media queries.
 
 ### Notes
 * Created as part of my Grade 9 Portfolio website for COMP10266.
