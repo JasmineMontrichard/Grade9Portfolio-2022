@@ -1,0 +1,19 @@
+/* ==== SMALL ===== */
+/* N/A */
+
+/* ==== MEDIUM ==== */
+/* N/A */
+
+/* ==== LARGE ===== */
+
+/* Personal Schedule Section */
+@media screen and (max-width: 945px) {
+    #personalScheduleInnerSection table {
+        display: none;
+    }
+
+    img#tableSchedule.hidden {
+        display: block;
+        width: 100%;
+    }
+}
