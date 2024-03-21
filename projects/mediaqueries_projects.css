@@ -1,0 +1,16 @@
+/* ==== SMALL ===== */
+/* N/A */
+
+/* ==== MEDIUM ==== */
+@media screen and (max-width: 650px) {
+    img.flex-item.previewImg {
+        float: none !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 70vw !important;
+    }
+}
+
+/* ==== LARGE ===== */
+/* N/A */
